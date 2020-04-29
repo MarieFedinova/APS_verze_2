@@ -1,0 +1,401 @@
+html { 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+*, ::after, ::before { box-sizing: inherit; }
+
+body {
+	text-rendering: optimizeLegibility;
+	font-family: 'Nunito', sans-serif;
+}
+
+header {
+	background-image: url(images/connectwork.png);
+	padding: 20px 20px 5px 20px;
+	text-align: center;
+}
+
+.hlavicka {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.logo2 {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.logo1 img {
+	width: 120px;
+}
+
+.logo2 img {
+	width: 80px;
+}
+
+.logo2 {
+	background-color: #fff;
+	padding: 3px;
+}
+
+.menu {
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 16px;
+	padding: 0;
+}
+
+.menu li {
+	padding: 3px 0;
+	
+}
+
+.menu a {
+	text-decoration: none;
+	padding: 0px 0;
+	color: white;
+}
+
+.menu a:hover,
+.menu a.active {
+	border-bottom: 3px solid rgb(161, 10, 10);
+}
+
+.obsah {
+	margin: 0 auto;
+	padding: 0 10px 20px 10px;
+	min-height: calc(100vh - 260px);
+}
+
+footer {
+	background-color: rgb(32, 32, 32);
+	text-align: center;
+	color: white;	
+}
+
+footer p {
+	margin: 0;
+	padding: 5px;
+	font-size: 0.9rem;
+}
+
+/* ------ O SPOLEČNOSTI ------- */
+
+.uvod {
+	text-align: center;
+}
+
+.uvod img {
+	width: 90%;
+	box-shadow: 0px 6px 10px grey;
+}
+
+.button {
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 8px;
+	background-color: rgb(97, 97, 97);
+	color: white;
+	/* background-color: rgb(155, 155, 155);
+	color: black; */
+}
+
+.button:hover {
+	background-color: rgb(32, 32, 32);
+	/* color: white; */
+	transition: all 0.3s;
+}
+
+.tlacitka {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tlacitka .button {
+	width: 242px;
+}
+
+/* ------ PRODUKTY ------- */
+
+.produkt {
+	display: flex;
+	justify-content: space-between;
+	/* padding-top: 20px; */
+}
+
+.produkt div {
+	display: flex;
+	align-items: center;
+	padding: 0 5px;
+	flex-wrap: wrap;
+	font-size: 0.8rem;
+}
+
+.produkt img {
+	width: 120px;
+}
+
+.produkt p {
+	flex-basis: 100%;
+}
+
+h3 {
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.popis {
+	font-size: 0.8rem;
+	padding-top: 0;
+}
+
+/* ------ SLUŽBY ------- */
+
+.sluzby {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+}
+
+.sluzba {
+	width: 350px;
+	margin-top: 20px;
+	padding: 0 20px;
+}
+
+.sluzba h2 {
+	text-align: center;
+	font-size: 24px;
+}
+.sluzba img {
+	width: 300px;
+}
+
+/* ------ REFERENCE ------- */
+
+.reference {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.zakaznici {
+	flex-basis: calc(100% / 2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	min-width: 150px;
+}
+
+.zakaznici img {
+	max-width: 150px;
+	max-height: 75px;
+	
+}
+
+/* ------ KONTAKTY ------- */
+
+.kontakty {
+	text-align: center;
+}
+
+.info h2 {
+	padding-top: 20px;
+}
+
+.ilustrace {
+	display: flex;
+	flex-wrap: wrap;
+	width: 250px;
+	margin: 30px auto;
+}
+
+.vysoky img {
+	width: 125px;
+	height: 100%;
+}
+
+.siroky img {
+	width: 250px;
+}
+
+@media screen and (min-width: 800px) {
+
+	header {
+		padding: 20px;
+	}
+
+	.zakaznici {
+		flex-basis: calc(100% / 3);
+	}
+
+	.menu {
+		display: flex;
+		padding: 20px 20px 0 20px;
+		margin: 0;
+		font-size: 1.3rem;
+		font-size: 18px;
+	}
+
+	.menu li {
+		padding: 10px;
+		flex-grow: 1;
+
+	}
+	.menu a {
+		height: 100%;
+		padding: 5px 5px;
+		
+	}
+
+	.obsah {
+		padding: 0 20px 20px 20px;
+	}
+
+	.uvod {
+		width: 640px;
+	}
+
+	.uvod img {
+		width: 600px;
+	}
+
+	.produkty {
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.produkt {
+		width: 500px;
+		padding: 10px 20px;
+	}
+
+}
+
+
+@media screen and (min-width: 1040px) {
+
+	.hlavicka {
+		padding: 0 20px;
+	}
+		
+	.logo1 img {
+		width: 280px;
+	}
+
+	.logo2 {
+		padding: 7px;
+	}
+
+	.logo2 img {
+		width: 180px;
+	}
+
+	.menu {
+		font-size: 22px;
+	}
+
+	.obsah {
+		text-align: left;
+	}
+
+	.uvod {
+		width: 700px;
+		text-align: center;
+	}
+
+	.uvod img {
+		width: 660px;
+	}
+
+	.produkty {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin-top: 20px;
+		width: 1000px;
+	}
+
+	.produkt {
+		padding-bottom: 20px;
+	}
+
+	.produkt p {
+		font-size: 1rem;
+	} 
+
+	.produkt img {
+		width: 150px;
+	}
+
+	.popis {
+		width: 350px;
+		font-size: 1rem;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+
+	.sluzby {
+		padding-top: 70px;
+	}
+
+	.reference {
+		padding: 0 20px;
+	}
+
+	.zakaznici {
+		flex-basis: calc(100% / 4);
+		padding: 10px 0;
+	}
+
+	.zakaznici img {
+		max-width: 200px;
+		max-height: 100px;
+		
+	}
+
+	.kontakty {
+		width: 900px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.ilustrace, .info {
+		flex-grow: 1;
+	}
+
+	.info {
+		padding-right: 20px;
+	}
+
+	.ilustrace {
+		display: flex;
+		flex-wrap: wrap;
+		width: 300px;
+		margin: 30px auto;
+	}
+
+	.vysoky img {
+		width: 150px;
+	}
+	
+	.siroky img {
+		margin: 0;
+		width: 300px;
+	}
+}
+
+@media screen and (min-width: 1260px) {
+	.menu {
+		padding: 20px 250px 0 250px;
+	}
+}
